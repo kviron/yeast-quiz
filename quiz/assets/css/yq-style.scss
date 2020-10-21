@@ -1,0 +1,67 @@
+.yq-button--disable{
+  cursor: none;
+  pointer-events: none;
+  opacity: .5;
+  filter: grayscale(100%);
+}
+.yeast-quiz{
+  position: relative;
+  max-width: 900px;
+  overflow: hidden;
+  *{
+    box-sizing: border-box;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+.yq{
+  &__wrapper{
+    position: relative;
+  }
+  &__page{
+    position: relative;
+    display: none;
+    padding: 30px;
+    width: 100%;
+    flex-shrink: 0;
+    min-height: 480px;
+  }
+  &__page-body{
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &-main-page__body{
+    max-width: 60%;
+  }
+  &-form{
+    width: 100%;
+    display: flex;
+    transition-property: transform;
+  }
+  &-button{
+    display: inline-block;
+    user-select: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    opacity: .8;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  &-active-page{
+    display: flex;
+    animation: displayd 3s ease-in-out;
+  }
+}
+@keyframes displayd {
+  from {display: none}
+  to{display: flex}
+}
+
+.group-inputs{
+  margin-bottom: 15px;
+}

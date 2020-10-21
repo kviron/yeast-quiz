@@ -1,0 +1,52 @@
+.yq-button--disable{
+  cursor: none;
+  pointer-events: none;
+  opacity: .5;
+  filter: grayscale(100%);
+}
+.yeast-quiz{
+  position: relative;
+  max-width: 900px;
+  overflow: hidden;
+}
+*{
+  box-sizing: border-box;
+}
+.yq__wrapper{
+  position: relative;
+}
+.yq__page{
+  position: relative;
+  display: none;
+  padding: 30px;
+  width: 100%;
+  flex-shrink: 0;
+  min-height: 480px;
+}
+.yq__page-body{
+  margin-bottom: 90px;
+}
+.yq-main-page__body{
+  max-width: 60%;
+}
+.yq-form{
+  width: 100%;
+  display: flex;
+  transition-property: transform;
+}
+.yq-button{
+  display: inline-block;
+  user-select: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  opacity: .8;
+
+  background-color: red;
+}
+.yq-button:hover{
+  opacity: 1;
+}
+.yq-active-page{
+  display: flex;
+}

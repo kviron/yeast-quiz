@@ -1,0 +1,17 @@
+{
+    "name": "kviron/yeast-quiz",
+    "description": "Quiz for project yeast",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer-plugin-api": "latest",
+        "phpmailer/phpmailer": "latest",
+        "htmlburger/carbon-fields": "latest"
+    },
+    "authors": [
+        {
+            "name": "dark37rus",
+            "email": "dark.1996rus@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
